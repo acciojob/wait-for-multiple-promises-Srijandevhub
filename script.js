@@ -1,6 +1,7 @@
 //your JS code here. If required.
 const outputElement = document.getElementById("output");
 const loadingrow = document.createElement("tr");
+loadingrow.id = "loading";
 loadingrow.innerHTML = '<td colspan="2">Loading...</td>';
 outputElement.appendChild(loadingrow);
 const createPromise = (name) => {
